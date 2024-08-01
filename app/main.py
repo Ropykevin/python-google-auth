@@ -24,9 +24,9 @@ login_manager.login_view = 'login'
 
 load_dotenv()
 # OAuth 2 client setup
-GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
-GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
-GOOGLE_DISCOVERY_URL = os.getenv("GOOGLE_DISCOVERY_URL")
+GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
+GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
+GOOGLE_DISCOVERY_URL = os.environ.get("GOOGLE_DISCOVERY_URL")
 # client = WebApplicationClient(GOOGLE_CLIENT_ID)
 print(GOOGLE_CLIENT_ID)
 oauth.register(

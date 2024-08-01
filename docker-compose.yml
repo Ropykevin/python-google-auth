@@ -2,6 +2,6 @@ version: '3'
 services:
   web:
       build: .
-      container-name: "elearn-web"
+      container_name: "elearn-web"
       ports:
       - "8000:80"
